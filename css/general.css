@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: #ffad00;
+  --primary-darker-color: #f0a400;
+  --heading-color: #343a40;
+  --text-color: #868e96;
+}
+
+.heading-primary {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.2rem;
+  margin-bottom: 1.6rem;
+}
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  margin-bottom: 1.6rem;
+}
+.heading-tertiary {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: var(--heading-color);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.text-md {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.text-sm {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.text-md,
+.text-sm {
+  color: var(--text-color);
+}
+
+img {
+  width: 100%;
+}
+
+.medium-circle {
+  width: 12rem; /* adjust size as needed */
+  height: 6rem; /* adjust size as needed */
+  border-radius: 0 0 100rem 100rem; /* make bottom edges round */
+  transform: rotate(180deg); /* flip the div element to create a semi-circle */
+
+  background-color: var(--primary-color); /* add any color you want */
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 2rem 3.6rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--heading-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--primary-color);
+  transition: background-color 0.3s;
+}
+.btn--primary:hover {
+  background-color: var(--primary-darker-color);
+}
+
+.btn-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.margin-top--md {
+  margin-top: 4rem;
+}
